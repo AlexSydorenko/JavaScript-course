@@ -1,2 +1,4 @@
-const num = 0;
-console.log("Hello!!!");
+"use strict";
+
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
+console.log(numberOfFilms);
