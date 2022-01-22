@@ -10,10 +10,9 @@ let personalMovieDB = {
     privat : false
 };
 
-const filmTitle = prompt("Один из последних просмотренных фильмов?", "");
-const filmRating = prompt("На сколько оцените его?", "");
-personalMovieDB.movies = {
-    filmTitle : filmRating
-};
+const films = [prompt("Один из последних просмотренных фильмов?", ""), prompt("На сколько оцените его?", ""),
+                prompt("Один из последних просмотренных фильмов?", ""), prompt("На сколько оцените его?", "")];
+personalMovieDB.movies[films[0]] = films[1];
+personalMovieDB.movies[films[2]] = films[3];
 
-console.log(`${filmTitle} ${filmRating}`);
+console.log(personalMovieDB);
